@@ -27,17 +27,77 @@ public class GameController : MonoBehaviour
 
     [Header("Outline Cubes:"), SerializeField]
     Field[] outlineCubes;    //The ones that make out the fruit oultine :D
-    
+
+
+    public List<Cube> craftCube = new List<Cube>();
+    Cube mainCube;
+    //bool newBall;
+
+    #region Create Balls:
+    public void CheckCollisions(Cube b)
+    {
+        if (craftCube.Count < 2)
+            craftCube.Add(b);
+        if (craftCube.Count == 2)
+            BallCrafter();
+    }
+
+    void BallCrafter()
+    {
+        //for (int i = 0; i < craftBalls.Count; i++)
+        //{
+        //    newBall = true;
+        //    //Store the data of the last ball
+        //}
+        ////Create a new ball instead of the stored two
+        //if (newBall)
+            mainCube = craftCube[0].nextCube;
+        int id = 0;
+        switch (mainCube.id) 
+        {
+            case 2:
+                id = 0;
+                break;
+
+            case 4:
+                id = 1;
+                break;
+
+            case 8:
+                id = 2;
+                break;
+
+            case 16:
+                id = 3;
+                break;
+
+            case 32:
+                id = 4;
+                break;
+        }
+        SpawnCube(id, null, craftCube[0].transform.parent);
+
+        //craftCube.Remove(mainCube);
+
+        for (int i = 0; i < craftCube.Count; i++)
+            Destroy(craftCube[i].gameObject);
+        craftCube.Clear();
+    }
+    #endregion
 
     public void SpawnCube(int cubeID, Transform target, Transform spawnPos = null)
     {
         if (spawnPos == null)
         {
             Cube c = Instantiate(cubes[cubeID], spawnPoint.position, cubes[cubeID].transform.rotation);
+            c.transform.SetParent(target);
             c.SetTarget(target);
         }
         else
-            Instantiate(cubes[cubeID], spawnPos.position, cubes[cubeID].transform.rotation);
+        {
+            Cube c = Instantiate(cubes[cubeID], spawnPos.position, cubes[cubeID].transform.rotation);
+            c.transform.SetParent(spawnPos);
+        }
     }
 
     public void CheckOutline()

@@ -399,6 +399,7 @@ MonoBehaviour:
   - {fileID: 1948569141}
   - {fileID: 424337070}
   - {fileID: 1794235361}
+  craftCube: []
 --- !u!1 &270330719
 GameObject:
   m_ObjectHideFlags: 0
@@ -1035,6 +1036,7 @@ GameObject:
   - component: {fileID: 424337068}
   - component: {fileID: 424337069}
   - component: {fileID: 424337070}
+  - component: {fileID: 424337071}
   m_Layer: 0
   m_Name: Green Cube (2)
   m_TagString: Field
@@ -1147,6 +1149,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 32
+--- !u!54 &424337071
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424337064}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &517412506
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,6 +1401,7 @@ GameObject:
   - component: {fileID: 605233468}
   - component: {fileID: 605233469}
   - component: {fileID: 605233470}
+  - component: {fileID: 605233471}
   m_Layer: 0
   m_Name: Yellow Cube (4)
   m_TagString: Field
@@ -1495,6 +1514,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 8
+--- !u!54 &605233471
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605233464}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &612248898
 GameObject:
   m_ObjectHideFlags: 0
@@ -2164,7 +2199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159175840}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: -2}
+  m_LocalPosition: {x: 0, y: 2, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2521,6 +2556,7 @@ GameObject:
   - component: {fileID: 1266381734}
   - component: {fileID: 1266381735}
   - component: {fileID: 1266381736}
+  - component: {fileID: 1266381737}
   m_Layer: 0
   m_Name: Yellow Cube (3)
   m_TagString: Field
@@ -2633,6 +2669,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 8
+--- !u!54 &1266381737
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266381730}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1311281331
 GameObject:
   m_ObjectHideFlags: 0
@@ -3183,6 +3235,7 @@ GameObject:
   - component: {fileID: 1418830810}
   - component: {fileID: 1418830811}
   - component: {fileID: 1418830812}
+  - component: {fileID: 1418830813}
   m_Layer: 0
   m_Name: Yellow Cube (5)
   m_TagString: Field
@@ -3295,6 +3348,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 8
+--- !u!54 &1418830813
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418830806}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1482960528
 GameObject:
   m_ObjectHideFlags: 0
@@ -3641,6 +3710,7 @@ GameObject:
   - component: {fileID: 1794235359}
   - component: {fileID: 1794235360}
   - component: {fileID: 1794235361}
+  - component: {fileID: 1794235362}
   m_Layer: 0
   m_Name: Green Cube (3)
   m_TagString: Field
@@ -3753,6 +3823,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 32
+--- !u!54 &1794235362
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794235355}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1868969880
 GameObject:
   m_ObjectHideFlags: 0
@@ -3962,6 +4048,7 @@ GameObject:
   - component: {fileID: 1948569139}
   - component: {fileID: 1948569140}
   - component: {fileID: 1948569141}
+  - component: {fileID: 1948569142}
   m_Layer: 0
   m_Name: Green Cube (1)
   m_TagString: Field
@@ -4074,6 +4161,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 32
+--- !u!54 &1948569142
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948569135}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!224 &1958218126 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6130558721538673535, guid: 29658d1d2c639ed489f27c972116f074, type: 3}
@@ -4232,6 +4335,7 @@ GameObject:
   - component: {fileID: 1996178821}
   - component: {fileID: 1996178822}
   - component: {fileID: 1996178823}
+  - component: {fileID: 1996178824}
   m_Layer: 0
   m_Name: Green Cube
   m_TagString: Field
@@ -4344,6 +4448,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 32
+--- !u!54 &1996178824
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996178817}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2008767270
 GameObject:
   m_ObjectHideFlags: 0
@@ -5363,6 +5483,7 @@ GameObject:
   - component: {fileID: 8631884396971494137}
   - component: {fileID: 8631884396971494138}
   - component: {fileID: 8631884396971494139}
+  - component: {fileID: 8631884396971494140}
   m_Layer: 0
   m_Name: Brown Cube
   m_TagString: Field
@@ -5410,6 +5531,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2
+--- !u!54 &8631884396971494140
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8631884396971494136}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8631884397079906263
 GameObject:
   m_ObjectHideFlags: 0
@@ -5424,6 +5561,7 @@ GameObject:
   - component: {fileID: 8631884397079906264}
   - component: {fileID: 8631884397079906265}
   - component: {fileID: 8631884397079906266}
+  - component: {fileID: 8631884397079906267}
   m_Layer: 0
   m_Name: Brown Cube
   m_TagString: Field
@@ -5471,6 +5609,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2
+--- !u!54 &8631884397079906267
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8631884397079906263}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8631884397590162548
 GameObject:
   m_ObjectHideFlags: 0
@@ -5485,6 +5639,7 @@ GameObject:
   - component: {fileID: 8631884397590162549}
   - component: {fileID: 8631884397590162550}
   - component: {fileID: 8631884397590162551}
+  - component: {fileID: 8631884397590162552}
   m_Layer: 0
   m_Name: Yellow Cube
   m_TagString: Field
@@ -5532,6 +5687,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 8
+--- !u!54 &8631884397590162552
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8631884397590162548}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8631884398075696863
 GameObject:
   m_ObjectHideFlags: 0
@@ -5546,6 +5717,7 @@ GameObject:
   - component: {fileID: 8631884398075696864}
   - component: {fileID: 8631884398075696865}
   - component: {fileID: 8631884398075696866}
+  - component: {fileID: 8631884398075696867}
   m_Layer: 0
   m_Name: Yellow Cube (1)
   m_TagString: Field
@@ -5593,6 +5765,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 8
+--- !u!54 &8631884398075696867
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8631884398075696863}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8631884398246979763
 GameObject:
   m_ObjectHideFlags: 0
@@ -5607,6 +5795,7 @@ GameObject:
   - component: {fileID: 8631884398246979764}
   - component: {fileID: 8631884398246979765}
   - component: {fileID: 8631884398246979766}
+  - component: {fileID: 8631884398246979767}
   m_Layer: 0
   m_Name: Yellow Cube (2)
   m_TagString: Field
@@ -5654,6 +5843,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 8
+--- !u!54 &8631884398246979767
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8631884398246979763}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &8727346099504174727
 PrefabInstance:
   m_ObjectHideFlags: 0

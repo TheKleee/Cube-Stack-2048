@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1533675013635307812}
   - component: {fileID: -8990038614232380399}
   - component: {fileID: 4966566421458952111}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cube 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,6 +127,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77f5d632c06cd54a8a408ccbdf5dceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cType: 0
+  nextCube: {fileID: 3299021674663576117, guid: 0ca951e96ca3bba48ab6d7adb7423732, type: 3}
+  id: 0
 --- !u!1 &4472648595191499905
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,7 +141,7 @@ GameObject:
   - component: {fileID: 1838694134344914231}
   - component: {fileID: 7409790903770627022}
   - component: {fileID: 5530613254294899569}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,7 +276,7 @@ GameObject:
   - component: {fileID: 4732238564999236928}
   - component: {fileID: 2374656059954648726}
   - component: {fileID: 5049617832894896165}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Canvas (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

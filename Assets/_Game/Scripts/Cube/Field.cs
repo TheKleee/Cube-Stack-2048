@@ -12,4 +12,17 @@ public class Field : MonoBehaviour
         isComplete = true;
         GetComponent<BoxCollider>().enabled = false;
     }
+
+    private void OnTriggerEnter(Collider cube)
+    {
+        if (cube.GetComponent<Cube>() != null)
+        {
+            var c = cube.transform.GetComponent<Cube>();
+            if (c.id == id)
+            {
+                LockField();
+                c.isComplete = true;
+            }
+        }
+    }
 }

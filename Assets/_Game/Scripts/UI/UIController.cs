@@ -72,7 +72,7 @@ public class UIController : MonoBehaviour
         {
             if (GameController.instance.end) break;
             GameController.instance.CheckOutline();
-            yield return Timing.WaitForSeconds(.2f);
+            yield return Timing.WaitForSeconds(.25f);
         }
         gameObject.SetActive(false);
     }
