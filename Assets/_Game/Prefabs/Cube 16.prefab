@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77f5d632c06cd54a8a408ccbdf5dceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cType: 0
+  cType: 3
   nextCube: {fileID: -4816508271505088129, guid: 429c553ffe1465b428b2e2623a5a05c3, type: 3}
   id: 0
 --- !u!1 &627014161497575432
