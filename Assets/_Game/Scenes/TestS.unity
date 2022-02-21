@@ -144,15 +144,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4228012861393828, guid: 0f3575c567ebe8241a4a6ad511fd7017, type: 3}
       propertyPath: m_LocalScale.x
-      value: 100.000015
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 4228012861393828, guid: 0f3575c567ebe8241a4a6ad511fd7017, type: 3}
       propertyPath: m_LocalScale.y
-      value: 100.00003
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 4228012861393828, guid: 0f3575c567ebe8241a4a6ad511fd7017, type: 3}
       propertyPath: m_LocalScale.z
-      value: 100.000015
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 4228012861393828, guid: 0f3575c567ebe8241a4a6ad511fd7017, type: 3}
       propertyPath: m_LocalPosition.x
@@ -386,6 +386,7 @@ MonoBehaviour:
   - {fileID: -5458218489946599851, guid: ebb3ff399b3207248b74786e565c8c37, type: 3}
   - {fileID: -4816508271505088129, guid: 429c553ffe1465b428b2e2623a5a05c3, type: 3}
   fruit: {fileID: 1982969395}
+  outline: {fileID: 1114937086}
   outlineCubes:
   - {fileID: 8631884397079906266}
   - {fileID: 8631884396971494139}

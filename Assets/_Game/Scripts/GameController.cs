@@ -22,7 +22,7 @@ public class GameController : MonoBehaviour
 
     [Header("Fruit:"), SerializeField]
     GameObject fruit;
-    [Space]
+    [Space, SerializeField]
     GameObject outline;
 
     [Header("Outline Cubes:"), SerializeField]
@@ -119,5 +119,7 @@ public class GameController : MonoBehaviour
         end = true;
         outline.SetActive(false);
         fruit.SetActive(true);
+        LeanTween.scale(fruit, Vector3.one * 100, 1.5f).setEaseOutBack();
+        LeanTween.rotateAround(fruit, Vector3.forward, 360, 3.75f).setLoopClamp();
     }
 }
