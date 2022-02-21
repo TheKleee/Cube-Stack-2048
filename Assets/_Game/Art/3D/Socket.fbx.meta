@@ -3,7 +3,17 @@ guid: 717c0f08e4ddb8c4aae52d455e62d012
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cube
+    second: {fileID: 2100000, guid: a6cb9bb1742ee6044bef935afd8a9277, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Okvir
+    second: {fileID: 2100000, guid: dd1b727c55054fd4fb1c7dd5230f1a81, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
