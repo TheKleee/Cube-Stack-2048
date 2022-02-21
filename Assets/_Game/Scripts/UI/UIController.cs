@@ -21,15 +21,18 @@ public class UIController : MonoBehaviour
 
     Transform target;
     Camera cam;
+    bool canTap;
 
     private void Start()
     {
+        canTap = true;
         cam = FindObjectOfType<Camera>();
         Timing.RunCoroutine(_SlowUpdate().CancelWith(gameObject));
     }
 
     private void Update()
     {
+        if(canTap)
 #if UNITY_EDITOR
         if (Input.GetMouseButton(0))
         {
@@ -43,13 +46,26 @@ public class UIController : MonoBehaviour
             {
                 if (hit.collider.isTrigger && hit.transform.CompareTag("Field"))
                 {
+                    CanTap();
                     target = hit.transform;
                     SelectedField();
                 }
             }
         }
     }
-
+    #region Tap:
+    void CanTap()
+    {
+        canTap = false;
+        Timing.KillCoroutines("Tap");
+        Timing.RunCoroutine(_CanTap().CancelWith(gameObject), "Tap");
+    }
+    IEnumerator<float> _CanTap()
+    {
+        yield return Timing.WaitForSeconds(.25f);
+        canTap = true;
+    }
+    #endregion
     IEnumerator<float> _SlowUpdate()
     {
         while (!GameController.instance.end)
