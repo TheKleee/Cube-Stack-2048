@@ -22,6 +22,7 @@ public class UIController : MonoBehaviour
     Transform target;
     Camera cam;
     bool canTap;
+    Field selectedFiled;
 
     private void Start()
     {
@@ -29,26 +30,37 @@ public class UIController : MonoBehaviour
         cam = FindObjectOfType<Camera>();
         Timing.RunCoroutine(_SlowUpdate().CancelWith(gameObject));
     }
-
     private void Update()
     {
-        if(canTap)
+        if (canTap)
+        {
 #if UNITY_EDITOR
-        if (Input.GetMouseButton(0))
-        {
-            Ray r = cam.ScreenPointToRay(Input.mousePosition);
-#elif UNITY_ANDROID
-        if(Input.touchCount > 0)
-        {
-            Ray r = cam.ScreenPointToRay(Input.touches[0].position);
-#endif
-            if (Physics.Raycast(r, out RaycastHit hit))
+            if (Input.GetMouseButton(0))
             {
-                if (hit.collider.isTrigger && hit.transform.CompareTag("Field"))
+                Ray r = cam.ScreenPointToRay(Input.mousePosition);
+#elif UNITY_ANDROID
+            if(Input.touchCount > 0)
+            {
+                Ray r = cam.ScreenPointToRay(Input.touches[0].position);
+#endif
+                if (Physics.Raycast(r, out RaycastHit hit))
                 {
-                    CanTap();
-                    target = hit.transform;
-                    SelectedField();
+                    if (hit.collider.isTrigger && hit.transform.CompareTag("Field"))
+                    {
+                        CanTap();
+                        selectedFiled = hit.transform.GetComponent<Field>();
+                        if (selectedFiled.id >= outlineData.GetChild(0).GetComponent<Indicators>().cubeID)
+                        {
+                            target = hit.transform;
+                            SelectedField();
+                        }
+                    }
+                    if (hit.transform.CompareTag("Player"))
+                    {
+                        CanTap();
+                        target = hit.transform;
+                        SelectedField();
+                    }
                 }
             }
         }
@@ -93,6 +105,11 @@ public class UIController : MonoBehaviour
     void SelectedField()
     {
         SetNextCube(outlineData.GetChild(0).GetComponent<Indicators>().spawnID);
+        RemoveNextCube();
+    }
+
+    public void RemoveNextCube()
+    {
         Destroy(outlineData.GetChild(0).gameObject);
         CreateOutlineChild();
     }

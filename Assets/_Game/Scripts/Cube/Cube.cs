@@ -27,22 +27,27 @@ public class Cube : MonoBehaviour
         {
             case CubeType.c2:
                 id = 2;
+                nextCube.id = 4;
                 break;
 
             case CubeType.c4:
                 id = 4;
+                nextCube.id = 8;
                 break;
 
             case CubeType.c8:
                 id = 8;
+                nextCube.id = 16;
                 break;
 
             case CubeType.c16:
                 id = 16;
+                nextCube.id = 32;
                 break;
 
             case CubeType.c32:
                 id = 32;
+                nextCube.id = 32;
                 break;
         }
     }

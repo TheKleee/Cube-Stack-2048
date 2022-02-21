@@ -18,10 +18,10 @@ public class Field : MonoBehaviour
         if (cube.GetComponent<Cube>() != null)
         {
             var c = cube.transform.GetComponent<Cube>();
-            if (c.id == id)
+            if (c.id == id && !c.isComplete)
             {
-                LockField();
                 c.isComplete = true;
+                LockField();
             }
         }
     }

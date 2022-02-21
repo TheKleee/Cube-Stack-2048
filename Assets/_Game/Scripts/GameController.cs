@@ -89,6 +89,7 @@ public class GameController : MonoBehaviour
     {
         if (spawnPos == null)
         {
+            spawnPoint.transform.position = target.position + new Vector3(0, 2, 0);
             Cube c = Instantiate(cubes[cubeID], spawnPoint.position, cubes[cubeID].transform.rotation);
             c.transform.SetParent(target);
             c.SetTarget(target);
