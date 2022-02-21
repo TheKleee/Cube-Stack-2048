@@ -296,7 +296,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dd1b727c55054fd4fb1c7dd5230f1a81, type: 2}
+  - {fileID: 2100000, guid: ee8ab005fed47ff47a7f75b130f64bc7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -362,4 +362,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cType: 4
   nextCube: {fileID: -4816508271505088129}
-  id: 0
+  id: 32
