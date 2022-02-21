@@ -82,6 +82,7 @@ public class UIController : MonoBehaviour
         int randIndicator = Random.Range(0, indicators.Length);
         var i = Instantiate(indicators[randIndicator]);
         i.transform.SetParent(outlineData);
+        i.transform.localScale = Vector3.one;
     }
 
     public void SetNextCube(int spawnID)
@@ -92,6 +93,7 @@ public class UIController : MonoBehaviour
     void SelectedField()
     {
         SetNextCube(outlineData.GetChild(0).GetComponent<Indicators>().spawnID);
+        Destroy(outlineData.GetChild(0).gameObject);
         CreateOutlineChild();
     }
 }
