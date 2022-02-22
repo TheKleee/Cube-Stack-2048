@@ -1327,6 +1327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 32
+  cubeLocalRotation: {x: 180, y: 90, z: 0}
 --- !u!54 &424337071
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1692,6 +1693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 8
+  cubeLocalRotation: {x: -180, y: -90, z: 0}
 --- !u!54 &605233471
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2995,6 +2997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 8
+  cubeLocalRotation: {x: -180, y: 0, z: 0}
 --- !u!54 &1266381737
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3674,6 +3677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 8
+  cubeLocalRotation: {x: -180, y: -90, z: 0}
 --- !u!54 &1418830813
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4224,6 +4228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 32
+  cubeLocalRotation: {x: 180, y: 180, z: 0}
 --- !u!54 &1794235362
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4562,6 +4567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 32
+  cubeLocalRotation: {x: 180, y: 90, z: 0}
 --- !u!54 &1948569142
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4849,6 +4855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 32
+  cubeLocalRotation: {x: 180, y: 0, z: 0}
 --- !u!54 &1996178824
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5932,6 +5939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2
+  cubeLocalRotation: {x: -180, y: 0, z: 0}
 --- !u!54 &8631884396971494140
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6010,6 +6018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2
+  cubeLocalRotation: {x: -180, y: 0, z: 0}
 --- !u!54 &8631884397079906267
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6088,6 +6097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 8
+  cubeLocalRotation: {x: -180, y: 0, z: 0}
 --- !u!54 &8631884397590162552
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6166,6 +6176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 8
+  cubeLocalRotation: {x: -180, y: 0, z: 0}
 --- !u!54 &8631884398075696867
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6244,6 +6255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 8
+  cubeLocalRotation: {x: -180, y: 0, z: 0}
 --- !u!54 &8631884398246979767
 Rigidbody:
   m_ObjectHideFlags: 0

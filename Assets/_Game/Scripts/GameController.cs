@@ -39,19 +39,12 @@ public class GameController : MonoBehaviour
         if (craftCube.Count < 2)
             craftCube.Add(b);
         if (craftCube.Count == 2)
-            BallCrafter();
+            CubeCrafter();
     }
 
-    void BallCrafter()
+    void CubeCrafter()
     {
-        //for (int i = 0; i < craftBalls.Count; i++)
-        //{
-        //    newBall = true;
-        //    //Store the data of the last ball
-        //}
-        ////Create a new ball instead of the stored two
-        //if (newBall)
-            mainCube = craftCube[0].nextCube;
+        mainCube = craftCube[0].nextCube;
         int id = 0;
         switch (mainCube.id) 
         {
@@ -76,8 +69,6 @@ public class GameController : MonoBehaviour
                 break;
         }
         SpawnCube(id, null, craftCube[0].transform.parent);
-
-        //craftCube.Remove(mainCube);
 
         for (int i = 0; i < craftCube.Count; i++)
             Destroy(craftCube[i].gameObject);

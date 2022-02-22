@@ -6,6 +6,8 @@ public class Field : MonoBehaviour
 {
     [Header("Field ID")]
     public int id;
+    [Space, SerializeField]
+    Vector3 cubeLocalRotation;
     public bool isComplete { get; private set; }
     public void LockField()
     {
@@ -18,11 +20,17 @@ public class Field : MonoBehaviour
         if (cube.GetComponent<Cube>() != null)
         {
             var c = cube.transform.GetComponent<Cube>();
+            RotateCube(c.transform);
             if (c.id == id && !c.isComplete)
             {
                 c.isComplete = true;
                 LockField();
             }
         }
+    }
+
+    void RotateCube(Transform cube)
+    {
+        cube.localEulerAngles = cubeLocalRotation;
     }
 }
