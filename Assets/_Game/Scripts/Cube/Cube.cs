@@ -56,9 +56,13 @@ public class Cube : MonoBehaviour
 
     IEnumerator<float> _LifeTime()
     {
-        yield return Timing.WaitForSeconds(2f);
+        yield return Timing.WaitForSeconds(1.5f);
         if (die)
+        {
+            LeanTween.scale(gameObject, Vector3.one * .25f, .5f).setEaseOutBack();
+            yield return Timing.WaitForSeconds(.5f);
             Destroy(gameObject);
+        }
     }
     public void SetTarget(Transform target)
     {
