@@ -20,9 +20,10 @@ public class Cube : MonoBehaviour
     [Space]
     public Cube nextCube;
     [HideInInspector] public int id;
-
+    public bool die { get; set; }
     private void Awake()
     {
+        die = true;
         switch (cType)
         {
             case CubeType.c2:
@@ -50,8 +51,15 @@ public class Cube : MonoBehaviour
                 nextCube.id = 32;
                 break;
         }
+        Timing.RunCoroutine(_LifeTime().CancelWith(gameObject));
     }
 
+    IEnumerator<float> _LifeTime()
+    {
+        yield return Timing.WaitForSeconds(2f);
+        if (die)
+            Destroy(gameObject);
+    }
     public void SetTarget(Transform target)
     {
         LeanTween.move(gameObject, target.position, 0.25f)/*.setEaseOutBounce()*/;
@@ -70,6 +78,13 @@ public class Cube : MonoBehaviour
                     //isComplete = true;
                     GameController.instance.CheckCollisions(this);
                 }
+                return;
+            }
+
+            if (cube.transform.CompareTag("Floor"))
+            {
+                die = true;
+                Timing.RunCoroutine(_LifeTime().CancelWith(gameObject));
             }
         }
     }

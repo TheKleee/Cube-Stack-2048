@@ -20,10 +20,12 @@ public class Field : MonoBehaviour
         if (cube.GetComponent<Cube>() != null)
         {
             var c = cube.transform.GetComponent<Cube>();
+            c.die = false;
             RotateCube(c.transform);
             if (c.id == id && !c.isComplete)
             {
                 c.isComplete = true;
+                c.transform.GetChild(0).gameObject.SetActive(false);
                 LockField();
             }
         }
