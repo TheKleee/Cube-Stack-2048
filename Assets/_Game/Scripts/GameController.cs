@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Tabtale.TTPlugins;
 
 public class GameController : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class GameController : MonoBehaviour
     public static GameController instance;
     private void Awake()
     {
+        TTPCore.Setup();
         instance = this;
     }
     #endregion
